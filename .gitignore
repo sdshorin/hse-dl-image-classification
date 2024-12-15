@@ -1,0 +1,15 @@
+dataset/*
+.DS_Store
+venv/*
+sum.py
+wandb/*
+src/config/wandb.yaml
+
+src/**/__pycache__/*
+_._results.md
+submission.csv
+checkpoints/**
+.ssh/*
+TODO
+submission*
+scripts/server_config.sh

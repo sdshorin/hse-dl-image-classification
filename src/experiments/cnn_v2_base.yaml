@@ -1,0 +1,22 @@
+model:
+  path: models.cnn_v2.CNN
+  params:
+    in_channels: 3
+    num_classes: 200
+    # dropout_rate: 0.3
+
+training:
+  epochs: 200
+  optimizer:
+    name: adam
+    lr: 0.001
+    weight_decay: 0.0001
+  scheduler:
+      name: "OneCycleLR"
+      max_lr: 0.01
+      pct_start: 0.3
+
+data:
+  train_dir: dataset/trainval
+  train_csv: "dataset/trainval.csv"
+  batch_size: 64
